@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-body">
+        <form (ngSubmit)="agregarUsuario()">
+            <div class="form-group border-top m-3">
+                <input type="text" class="form-control" placeholder="Nombre" name="nombre"
+                    [(ngModel)]="nuevoPersonaje.nombre" />
+            </div>
+            <div class="form-group border-top m-3">
+                <input type="text" class="form-control" placeholder="Apellido" name="apellido"
+                    [(ngModel)]="nuevoPersonaje.apellido" />
+            </div>
+            <div class="form-group border-top m-3">
+                <input type="text" class="form-control" placeholder="Edad" name="edad"
+                    [(ngModel)]="nuevoPersonaje.edad" />
+            </div>
+            <div class="d-flex">
+                <button class="form-control bg-dark text-light" type="button" (click)="limpiarFormulario()">Limpiar</button>
+                <button class="form-control bg-dark text-light" type="submit">Agregar Usuario</button>
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
